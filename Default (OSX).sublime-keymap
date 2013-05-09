@@ -1,4 +1,4 @@
 [
-    { "keys": ["super+;"], "command": "smart_surround_delete" },
-    { "keys": ["super+shift+;"], "command": "smart_surround_change" }
+    { "keys": ["super+shift+;"], "command": "smart_surround_delete" },
+    { "keys": ["super+;"], "command": "smart_surround_change" }
 ]

@@ -7,7 +7,7 @@ COMMON_SURROUNDERS = {
     '|' : '\|',
     '<' : '>',
     '"' : '"',
-    "'" : "'"
+    '\'' : '\''
 }
 
 
@@ -17,7 +17,7 @@ class SmartSurroundCommand(sublime_plugin.TextCommand):
     """
 
     def get_begin_end(self):
-        begin = self.find_opening(r'(\||\(|\[|\"|\'|\{|<)')
+        begin = self.find_opening(r"(\||\(|\[|'|\"|\{|<)")
         if begin and self.view.substr(begin) in COMMON_SURROUNDERS:
             end = self.find_closing(COMMON_SURROUNDERS.get(self.view.substr(begin)))
             return begin, end
