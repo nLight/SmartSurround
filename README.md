@@ -1,7 +1,7 @@
 Sublime SmartSurround
 =====================
 
-Sublime Smart Surround Plugin
+Sublime Smart Surround Plugin. Does what it should without hints.
 
 Matches `( )`, `{ }`, `[ ]`, `| |`, `< >`, `" "`, `' '`
 
