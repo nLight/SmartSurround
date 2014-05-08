@@ -30,7 +30,7 @@ class SmartSurroundCommand(sublime_plugin.TextCommand):
     def find_opening(self, what):
         new_regions = (r for r in reversed(self.view.find_all(what)) if r.begin() < self.cursor_pos())
         try:
-            new_region = new_regions.next()
+            new_region = next(new_regions)
         except StopIteration:
             pass
 
